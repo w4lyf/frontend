@@ -21,7 +21,7 @@ class Example(tk.LabelFrame):
             ]
 
 
-        self.photo = tk.PhotoImage(file="assets\\images_2_fix.png")
+        self.photo = tk.PhotoImage(file="assets\\admin_bg.png")
         self.grid_columnconfigure(1, weight=1)
 
         tk.Label(self,
