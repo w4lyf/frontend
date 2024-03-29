@@ -117,5 +117,19 @@ button1 = Button(
 )
 button1.place(x=200, y=550, width=320, height=65)
 
+# =============== Button2 ====================
+buttonImage2 = PhotoImage(file="assets\\back_black.png")
+button2 = Button(
+    bg_image,
+    image=buttonImage2,
+    borderwidth=0,
+    highlightthickness=0,
+    relief="flat",
+    activebackground="#272A37",
+    cursor="hand2"
+)
+button2.place(x=40, y=555, width=60, height=60)
+
+
 window.resizable(False, False)
 window.mainloop()
