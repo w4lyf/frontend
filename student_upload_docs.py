@@ -77,10 +77,10 @@ Label1_text.place(x=25, y=0)
 # Define the style for combobox widget
 style= ttk.Style()
 style.theme_use('clam')
-style.configure("TCombobox", fieldbackground= "black", background= "grey")
+style.configure("TCombobox", fieldbackground= "#272A37", background= "#272A37")
 
 # Add a Combobox widget
-cb= ttk.Combobox(window, width= 25, values=["Personal Documents", "Marksheets", "Certificates"], font=("Verdana 16 bold", 16))
+cb= ttk.Combobox(window, width= 25, values=["Personal Documents", "Marksheets", "Certificates"], font=("Verdana 16 bold", 16), foreground = "white")
 
 cb.tk.eval('[ttk::combobox::PopdownWindow %s].f.l configure -foreground white -background black' % cb)
 cb.place(x = 95, y = 270)
